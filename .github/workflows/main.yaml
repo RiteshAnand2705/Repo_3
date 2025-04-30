@@ -1,0 +1,16 @@
+name: Examplle Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Runa a script
+        run: echo "Hello ,World!"
